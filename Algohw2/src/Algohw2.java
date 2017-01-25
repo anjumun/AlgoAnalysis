@@ -38,14 +38,11 @@ public class Algohw2 {
 	 * @param currentString
 	 * @return
 	 */
-	private static String recursive(String currentString){
+	private static  void recursive(String currentString){
 		if(currentString.length() > 0){
 			System.out.print(currentString.charAt(currentString.length() -1));
 			recursive(currentString.substring(0, currentString.length()-1));
-		}
-		
-		return null;		
-		
+		}	
 	}
 	/**
 	 * iteratively reverses a String
